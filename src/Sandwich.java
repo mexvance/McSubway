@@ -1,6 +1,6 @@
 public abstract class Sandwich {
 
-    final void Sandwich() {
+    final void createSandwich() {
         chooseBread();
         chooseMeat();
         addCondiments();
@@ -8,7 +8,9 @@ public abstract class Sandwich {
         if (addHotToppings()) {
             hotTopping();
         }
-        addMeat();
+        if (toastBunOption()){
+            toastBun();
+        }
         putMeatOnBread();
         putCondiments();
     }
@@ -16,26 +18,31 @@ public abstract class Sandwich {
     abstract void chooseBread();
     abstract void chooseMeat();
     abstract void addCondiments();
-    abstract void chooseCheese();
-
-    final void addMeat(){
-
-    }
 
     final void putMeatOnBread(){
-
+        System.out.println ("Putting meat onto bread");
     }
 
     final void putCondiments(){
-
+        System.out.println ("Putting condiments onto bread");
     }
 
     void hotTopping(){
 
     }
+    void toastBun(){
 
+    }
+    void chooseCheese(){
+
+    }
+
+    //generically this returns false unless we override it and tell it otherwise
     boolean addHotToppings() {
-        return true;
+        return false;
+    }
+    boolean toastBunOption() {
+        return false;
     }
 
 
