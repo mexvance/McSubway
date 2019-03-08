@@ -1,28 +1,17 @@
 public class Club extends Sandwich {
     @Override
     void chooseBread() {
-        System.out.println("You chose Sourdough bread");
+        output.add("Choosing Bread: You chose Sourdough bread\n");
     }
 
     @Override
     void chooseMeat() {
-        System.out.println("You chose pastrami");
-
-        System.out.println("You chose bacon");
-    }
-
-    @Override
-    void addCondiments() {
-        System.out.println("You chose Mayonaise");
-        System.out.println("You chose Mustard");
-        System.out.println("You chose Ketchup");
-        System.out.println("You chose Lettuce");
-        System.out.println("You chose Tomatoes");
-        System.out.println("You chose Avocado");
+        output.add("Choosing Meat: You chose pastrami\n");
+        output.add("Choosing Meat: You chose bacon\n");
     }
 
     @Override
     void chooseCheese() {
-        System.out.println("You chose Swiss");
+        output.add("Choosing Cheese: You chose Swiss\n");
     }
 }

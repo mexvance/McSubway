@@ -1,27 +1,22 @@
 public class Sub extends Sandwich {
+    boolean canToast;
     @Override
     void chooseBread() {
-        System.out.println("You chose Italian Herbs and Cheese bread");
+        output.add("Choosing Bread: You chose Italian Herbs and Cheese bread\n");
     }
 
     @Override
     void chooseMeat() {
-        System.out.println("You chose Meatballs");
-    }
-
-    @Override
-    void addCondiments() {
-        System.out.println("You chose Ranch");
-        System.out.println("You chose Mustard");
-        System.out.println("You chose Vinegar");
-        System.out.println("You chose Oil");
-        System.out.println("You chose Spinach");
-        System.out.println("You chose Onions");
-        System.out.println("You chose Jalapeno peppers");
+        output.add("Choosing Meat: You chose Meatballs\n");
     }
 
     @Override
     void chooseCheese() {
-        System.out.println("You chose Mozzarella");
+        output.add("Choosing Cheese: You chose Mozzarella\n");
+    }
+
+    @Override
+    boolean toastBunOption(){
+        return canToast;
     }
 }

@@ -1,26 +1,19 @@
 public class McBurger extends Sandwich {
     @Override
     void chooseBread() {
-        System.out.println("You chose poppyseed Hamburger Bun");
+        output.add("Choose Bread: ");
+        output.add("You chose poppyseed Hamburger Bun\n");
     }
 
     @Override
     void chooseMeat() {
-        System.out.println("You chose 1/4 pounder");
-    }
-
-    @Override
-    void addCondiments() {
-        System.out.println("You chose Mayonaise");
-        System.out.println("You chose Mustard");
-        System.out.println("You chose Ketchup");
-        System.out.println("You chose Lettuce");
-        System.out.println("You chose Tomatoes");
-        System.out.println("You chose Pickles");
+        output.add("Choose Meat: ");
+        output.add("You chose 1/4 pounder\n");
     }
 
     @Override
     void chooseCheese() {
-        System.out.println("You chose PepperJack");
+        output.add("Choose Cheese: ");
+        output.add("You chose PepperJack\n");
     }
 }
